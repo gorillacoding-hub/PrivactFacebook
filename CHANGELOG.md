@@ -1,14 +1,10 @@
 # Changelog
 
-## 0.3.0 — module + menu/surface blocking (FB Lite 539)
+## 0.4.0
 
-- Disable downloadable modules: profilo, heroplayer, mediastreaming, boost, blokscamera, ANR detector
-- Keep messaging modules: msys, msysinfra, rtc
-- Poison GraphQL client ops: PYMK, StoryById, impression, GenAI consent
-- Wipe assets/com/facebook/logginginfra/falco/*
-- Expanded path scrub + Block.smali for feed_unit / pymk / heroplayer / mediastreaming
-- Manifest AD_ID + analytics component cleanup
-
-## 0.2.0 — strengthened tracking strings from classes.dex
-
-## 0.1.0 — initial pipeline
+- Runtime network hook on LX/03z.AE6 (HttpURLConnection)
+- PrivacyInit from Application.onCreate
+- In-app SettingsActivity with launcher icon
+- Config SharedPreferences toggles + RestartHelper
+- Module disable, GraphQL poison, falco wipe (fixed, no name corruption)
+- Verified rebuild with apktool 2.11.1 on Facebook Lite 539
